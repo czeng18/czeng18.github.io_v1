@@ -3,14 +3,59 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caroline Zeng</title>
     <style>
+        @font-face {
+            font-family: notoSans;
+            src: url(notosans/NotoSans-Regular.ttf);
+        }
 
+        @font-face {
+            font-family: muli;
+            src: url(muli/Muli.ttf);
+        }
+
+        body {
+            background-color: #212121;
+        }
+
+        h1 {
+            color: #EEEEEE;
+            font-family: muli;
+            font-size: 58px;
+        }
+
+        p {
+            color: #EEEEEE;
+            font-family: notosans;
+        }
     </style>
+    <link href="StyleSheet.css" rel="stylesheet">
 </head>
 
 <body>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About me</a>
+        <a href="#">Experiences</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
 
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+
+    <h1>Test</h1>
 </body>
 
 </html>
